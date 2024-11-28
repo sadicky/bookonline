@@ -1,0 +1,14 @@
+On Windows, I was getting the following error:
+
+EADDRINUSE: address already in use :::8081.
+
+Followed these steps:
+
+Opened CMD as Admin
+Ran the folowing
+
+command netstat -ano|findstr "PID :8081"
+
+killed it via:
+
+taskkill /pid 43144 /f
