@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 31 oct. 2024 à 18:20
+-- Généré le : jeu. 28 nov. 2024 à 22:49
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -307,7 +307,8 @@ INSERT INTO `tbl_logs` (`log_id`, `ip`, `agent`, `host`, `descriptions`, `action
 (56, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'SADICKY', 'Admin Logout', 'Monga est deconnecté avec succès.', '2024-10-31 15:58:57', '2024-10-31 17:58:57'),
 (57, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'SADICKY', 'Membre Login', 'SADICKY  Dave est connecté avec succès.', '2024-10-31 16:06:52', '0000-00-00 00:00:00'),
 (58, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'SADICKY', 'Membre Logout', 'SADICKY  Dave est deconnecté avec succès.', '2024-10-31 16:56:28', '2024-10-31 18:56:28'),
-(59, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'SADICKY', 'Admin Login', 'Monga est connecté avec succès.', '2024-10-31 16:56:35', '0000-00-00 00:00:00');
+(59, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'SADICKY', 'Admin Login', 'Monga est connecté avec succès.', '2024-10-31 16:56:35', '0000-00-00 00:00:00'),
+(60, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'SADICKY', 'Admin Logout', 'Monga est deconnecté avec succès.', '2024-10-31 17:57:54', '2024-10-31 19:57:54');
 
 -- --------------------------------------------------------
 
@@ -346,7 +347,8 @@ CREATE TABLE `tbl_members` (
 INSERT INTO `tbl_members` (`id_member`, `nom`, `postnom`, `prenom`, `sexe`, `card_number`, `type`, `provenance`, `contact_autorite`, `matricule`, `email`, `adresse`, `tel`, `code`, `verified_at`, `photo`, `statut`, `classe_id`, `promotion`, `fonction`, `ville`) VALUES
 (1, 'SADICKY', 'Dave', 'SADICKY', 'M', 'ET2020060302653', 'I', '', '', 'M-731620', 'akadearn@gmail.com', 'Uvira, Nyamianda, Embouchure', '243979268522', '76784515', '2024-10-19 16:31:37', '', '1', 4, '', 'etudiant', ''),
 (2, 'MATENGA', 'DAVID', 'SADIKI', 'M', '', 'E', 'ISDR Uvira', '+243979268522', 'M-974125', 'akadearnmatenga@gmail.com', 'Bwiza', '69124727', '19070763', '2024-10-28 21:48:47', '', '1', 0, '2020-2021', 'etudiant', 'Bujumbura'),
-(4, 'SADICKY', '', 'Dave', 'M', 'B-ISC-680259', 'E', 'ISP', '+243979268522', '362650159', 'akadearn1@gmail.com', 'Bwiza', '69124727', '15259204', '2024-10-31 18:04:17', '', '1', 0, '2019-2020', 'etudiant', 'Bujumbura');
+(4, 'SADICKY', '', 'Dave', 'M', 'B-ISC-680259', 'E', 'ISP', '+243979268522', '362650159', 'akadearn1@gmail.com', 'Bwiza', '69124727', '15259204', '2024-10-31 18:04:17', '', '1', 0, '2019-2020', 'etudiant', 'Bujumbura'),
+(5, 'SADICKY Dave', '', 'Dave', 'M', 'B-ISC-246890', '', '', '', '362670', 'akadear7n@gmail.com', 'Bwiza', '61867542', '14153230', NULL, '', '0', 0, '', 'etudiant', '');
 
 -- --------------------------------------------------------
 
@@ -467,7 +469,8 @@ INSERT INTO `tbl_users` (`id_user`, `username`, `role`, `password`, `noms`, `ema
 (21, 'latifa', 'Librarian', '$2y$10$qMjQyPpYWKewmx8RussRnOLM6hTBMM6juT/EOHlGETcaLlhKauaIm', 'Latifah', 'latifah@gmail.com', '69124727', '1'),
 (22, 'pacifique', 'SGAC', '$2y$10$NJ2kXQscxwPfM7OdY3adA.IKSxcUOY9xQgQE9dTrUN1UkxT3LR1Sm', 'Pacifique Nyabagaza', 'Pacifiquenyabagaza@gmail.com', '69124727', '0'),
 (23, 'M-974125', 'Membre', '$2y$10$wRDk0t96mRl5lIRc0vHCLOUeoeKz/A3VJMz9zy/WWPfMlNBP0rBe.', 'MATENGA DAVID SADIKI', 'akadearnmatenga@gmail.com', '69124727', '1'),
-(25, 'B-ISC-680259', 'Membre', '$2y$10$R.N.HChdsiIhSE5b1pF3weP0C2VF.JJaBQvc46IP7AfiL2i1D9Sza', 'SADICKY  Dave', 'akadearn1@gmail.com', '69124727', '1');
+(25, 'B-ISC-680259', 'Membre', '$2y$10$R.N.HChdsiIhSE5b1pF3weP0C2VF.JJaBQvc46IP7AfiL2i1D9Sza', 'SADICKY  Dave', 'akadearn1@gmail.com', '69124727', '1'),
+(26, 'B-ISC-246890', 'Membre', '$2y$10$v9G90FFDhdBwZP8muZS2metPRPuRXsBO.GKLVyTcdyvnZJ9K56NNK', 'SADICKY Dave  Dave', 'akadear7n@gmail.com', '61867542', '0');
 
 --
 -- Index pour les tables déchargées
@@ -627,13 +630,13 @@ ALTER TABLE `tbl_genres`
 -- AUTO_INCREMENT pour la table `tbl_logs`
 --
 ALTER TABLE `tbl_logs`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT pour la table `tbl_members`
 --
 ALTER TABLE `tbl_members`
-  MODIFY `id_member` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_member` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `tbl_plans`
@@ -663,7 +666,7 @@ ALTER TABLE `tbl_subscriptions`
 -- AUTO_INCREMENT pour la table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
